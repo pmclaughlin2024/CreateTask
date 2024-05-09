@@ -44,6 +44,7 @@ def verify_button(buttons):
 def shuffle(cards):
     return random.shuffle(cards)
 
+#Flips card only if it has not already been solved. 
 def flip(card):
     if not card.flipped:
         image = f"card-{card.value}.png"
